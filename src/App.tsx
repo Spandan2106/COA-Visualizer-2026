@@ -11,9 +11,7 @@ import {
   ArrowRight, ChevronRight, Info, X, ZoomIn, Sun, Moon, 
   RefreshCw, BookOpen, Hash, Layers, Binary, Cpu as Chip
 } from 'lucide-react';
-import boothImg from './public/booth.png';
-import restoringImg from './public/restoring.png';
-import nonRestoringImg from './public/nonrestoring.png';
+
 
 type Algorithm = 'booth' | 'restoring' | 'non-restoring' | 'conversion' | 'complement' | 'arithmetic' | 'ieee754';
 type Base = 2 | 8 | 10 | 16;
@@ -992,9 +990,9 @@ export default function App() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {[
-              { title: "Booth's Algorithm", src: boothImg },
-              { title: "Restoring Division", src: restoringImg },
-              { title: "Non-Restoring Division", src: nonRestoringImg, desc: "Optimized division without intermediate restoration." }
+              { title: "Booth's Algorithm", src: "public/booth.png" },
+              { title: "Restoring Division", src: "public/restoring.png" },
+              { title: "Non-Restoring Division", src: "public/nonrestoring.png", desc: "Optimized division without intermediate restoration." }
             ].map((flow, i) => (
               <motion.div
                 key={i}
