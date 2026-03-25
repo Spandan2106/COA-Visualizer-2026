@@ -990,9 +990,9 @@ export default function App() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {[
-              { title: "Booth's Algorithm", src: "public/booth.png" },
-              { title: "Restoring Division", src: "public/restoring.png" },
-              { title: "Non-Restoring Division", src: "public/nonrestoring.png", desc: "Optimized division without intermediate restoration." }
+              { title: "Booth's Algorithm", src: "/booth.png" },
+              { title: "Restoring Division", src: "/restoring.png" },
+              { title: "Non-Restoring Division", src: "/nonrestoring.png", desc: "Optimized division without intermediate restoration." }
             ].map((flow, i) => (
               <motion.div
                 key={i}
